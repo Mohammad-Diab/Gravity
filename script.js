@@ -37,7 +37,7 @@ class Text {
         ctx.font = `${this.fontSize} ${this.fontFamily}`;
         let reuslt = ctx.measureText(this.text);
         ctx.font = pFont;
-        return [reuslt.width, reuslt.fontBoundingBoxAscent + reuslt.fontBoundingBoxDescent];
+        return [reuslt.width + 2, reuslt.fontBoundingBoxAscent + reuslt.fontBoundingBoxDescent];
     }
 
     append(ctx, x, y, color) {
@@ -52,7 +52,7 @@ class Text {
         for (let i = 0; i < 17; i++) {
             let prevY = this.y + 24 - i * 1.5;
             setTimeout(() => {
-                ctx.clearRect(this.x, prevY, width, height);
+                ctx.clearRect(this.x - 1, prevY, width, height);
                 this.append(ctx, this.x, prevY - 1.5, this.toRgba `${this.color}${153+i*6+6}`);
             }, 15 * i);
         }
