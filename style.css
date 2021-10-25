@@ -8,11 +8,12 @@ body {
 
 .full-page {
     height: 100vh;
+    border-top: 4px solid silver;
 }
 
 canvas {
     background: lightgoldenrodyellow;
-    margin: auto;
+    margin: 100px auto;
     display: block;
     width: 500px;
     height: 500px;
