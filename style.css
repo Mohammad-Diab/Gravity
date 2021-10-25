@@ -9,3 +9,11 @@ body {
 .full-page {
     height: 100vh;
 }
+
+canvas {
+    background: lightgoldenrodyellow;
+    margin: auto;
+    display: block;
+    width: 500px;
+    height: 500px;
+}
