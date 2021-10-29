@@ -13,6 +13,15 @@ body {
 
 canvas {
     background: lightgoldenrodyellow;
-    margin: 100px auto;
+    margin: 50px auto;
     display: block;
+}
+
+.silver {
+    background-color: silver;
+    display: none;
+}
+
+.skyblue {
+    background: skyblue;
 }
